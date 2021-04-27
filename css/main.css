@@ -1,0 +1,52 @@
+body {
+    background-color: #88adcb;    
+}
+
+.container {
+    display: inline-block;
+    width: 800px;
+    margin-top: 100px;
+    margin-left: calc((100% - 800px)/2);
+    background-color: yellow;
+
+}
+
+.left-column {
+    width: 40%;
+    float-left;
+    background-color: blue;
+
+
+}
+
+.main-title {
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+    
+
+}
+
+.bottom-links {
+
+}
+
+.link {
+
+}
+
+span {
+
+}
+
+main > div:last-child {
+
+}
+
+main > div:last-child > div {
+
+}
+
+form {
+
+}
