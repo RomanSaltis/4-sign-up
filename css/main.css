@@ -26,6 +26,11 @@ body {
     float: left;
     padding: 40px;
     background-color: blue;
+    box-sizing: border-box;
+    background-image: url(../hill.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
    
 
 
