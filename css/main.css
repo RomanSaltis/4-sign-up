@@ -1,3 +1,12 @@
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 body {
     background-color: #00adcb;    
 }
@@ -14,7 +23,10 @@ body {
 .left-column {
     width: 40%;
     float: left;
+    padding: 40px;
     background-color: blue;
+    border: 20px solid red;
+    box-sizing: border-box;
 
 
 }
@@ -23,8 +35,6 @@ body {
     display: inline-block;
     width: 100%;
     color: #fff;
-    
-
 }
 
 .bottom-links {
@@ -44,7 +54,10 @@ body {
 .right-column {
 float: left;
 width: 60%;
+padding: 40px;
 background-color: #fff;
+box-sizing: border-box;
+border: 20px solid green;
 }
 
 .close {
