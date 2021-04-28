@@ -22,11 +22,11 @@ body {
 
 .left-column {
     width: 40%;
+    height: 400px;
     float: left;
     padding: 40px;
     background-color: blue;
-    border: 20px solid red;
-    box-sizing: border-box;
+   
 
 
 }
