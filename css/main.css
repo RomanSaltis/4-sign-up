@@ -11,6 +11,10 @@ body {
     background-color: #00adcb;  
     filter:blur;  
     position: relative;
+    background-image: url(../hill.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
     
 }
 
@@ -20,18 +24,16 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    filter: blur(24px);
+    filter: blur(20px);
 }
 
 .container {
     display: inline-block;
     width: 800px;
-    margin-top: 100px;
-    margin-left: calc((100% - 800px)/2);
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(- 50%, - 50%);
+    transform: translate(-50%, -50%);
 
 }
 
