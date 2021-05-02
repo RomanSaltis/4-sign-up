@@ -8,7 +8,17 @@ body * {
 }
 
 body {
-    background-color: #00adcb;    
+    background-color: #00adcb;  
+    
+}
+
+.background {
+    height: 100vh;
+    background-image: url(../hill.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(24px);
 }
 
 .container {
@@ -16,25 +26,27 @@ body {
     width: 800px;
     margin-top: 100px;
     margin-left: calc((100% - 800px)/2);
-    background-color: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(- 50%, - 50%);
 
 }
 
 .left-column {
     width: 40%;
-    height: 400px;
     float: left;
     padding: 40px;
     background-color: blue;
     box-sizing: border-box;
     background-image: url(../hill.jpg);
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-   
-
-
-}
+    background-position: center;    
+    position: absolute;
+    top: 40px;
+    bottom: 40px;
+    }
 
 .main-title {
     display: inline-block;
@@ -46,6 +58,8 @@ body {
     display: inline-block;
     width: 100%;
     color: #fff;
+    position: absolute;
+    bottom: 20;
 }
 
 .link {
@@ -57,18 +71,77 @@ body {
 }
 
 .right-column {
-float: left;
+float: right;
 width: 60%;
-padding: 40px;
+padding: 60px;
 background-color: #fff;
 box-sizing: border-box;
-border: 20px solid green;
+
 }
 
 .close {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+    text-align: center;
+    line-height: 54px;
 
 }
 
 .form {
+    display: inline-block;
+    width: 100%;
+    }
 
+.form-row {
+    display: inline-block;
+    width: 100%;    
+}
+
+.form-row + .form-row {
+    margin-top: 40px;
+}
+
+label {
+    display: inline-block;
+    width: 100%;
+    color: #999;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+    }
+
+input {
+    display: inline-block;
+    width: 100%;
+    font-size: 20px;
+    border: none;
+    border-bottom: solid;
+    
+}
+
+input::placeholder {
+    color: #777;
+}
+
+button {
+    background-color: royalblue;
+    padding: 10px 40px;
+    font-size: 18px;
+    line-height: 20px;
+    border-radius: 22px;
+}
+
+.form-row > span {
+
+}
+
+.form-row > a {
+    padding: 11px;
+    line-height: 10px;
+    text-decoration: none;
 }
