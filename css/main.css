@@ -9,6 +9,8 @@ body * {
 
 body {
     background-color: #00adcb;  
+    filter:blur;  
+    position: relative;
     
 }
 
@@ -71,7 +73,7 @@ body {
 }
 
 .right-column {
-float: right;
+float: left;
 width: 60%;
 padding: 60px;
 background-color: #fff;
