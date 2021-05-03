@@ -11,6 +11,10 @@ body {
     background-color: #00adcb;  
     filter:blur;  
     position: relative;
+    background-image: url(../hill.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
     
 }
 
@@ -20,24 +24,21 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    filter: blur(24px);
+    filter: blur(20px);
 }
 
 .container {
     display: inline-block;
     width: 800px;
-    margin-top: 100px;
-    margin-left: calc((100% - 800px)/2);
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(- 50%, - 50%);
+    transform: translate(-50%, -50%);
 
 }
 
 .left-column {
     width: 40%;
-    float: left;
     padding: 40px;
     background-color: blue;
     box-sizing: border-box;
@@ -58,10 +59,11 @@ body {
 
 .bottom-links {
     display: inline-block;
-    width: 100%;
     color: #fff;
     position: absolute;
-    bottom: 20;
+    bottom: 20px;
+    left: 40px;
+    right: 40px;
 }
 
 .link {
@@ -73,11 +75,10 @@ body {
 }
 
 .right-column {
-float: left;
+float: right;
 width: 60%;
 padding: 60px;
 background-color: #fff;
-box-sizing: border-box;
 
 }
 
@@ -94,56 +95,24 @@ box-sizing: border-box;
 
 }
 
-.form {
-    display: inline-block;
-    width: 100%;
-    }
-
-.form-row {
-    display: inline-block;
-    width: 100%;    
-}
-
-.form-row + .form-row {
-    margin-top: 40px;
-}
-
-label {
-    display: inline-block;
-    width: 100%;
-    color: #999;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 13px;
-    }
-
-input {
-    display: inline-block;
-    width: 100%;
-    font-size: 20px;
-    border: none;
-    border-bottom: solid;
-    
-}
-
-input::placeholder {
-    color: #777;
-}
-
-button {
-    background-color: royalblue;
-    padding: 10px 40px;
-    font-size: 18px;
-    line-height: 20px;
-    border-radius: 22px;
-}
-
 .form-row > span {
+    display: inline-block;
+    padding: 11px;
+    margin-left: 11px;
+    line-height: 20px;
+    font-size: 18px;
 
 }
 
 .form-row > a {
+    display: inline-block;
     padding: 11px;
-    line-height: 10px;
+    line-height: 20px;
+    font-size: 18px;
     text-decoration: none;
+}
+
+.form-row > a:hover {
+    color: blue;
+    text-decoration: underline;
 }
